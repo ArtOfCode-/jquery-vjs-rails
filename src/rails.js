@@ -151,19 +151,19 @@
               xhr.setRequestHeader('accept', '*/*;q=0.5, ' + settings.accepts.script);
             }
             if (rails.fire(element, 'ajax:beforeSend', [xhr, settings])) {
-              element.trigger('ajax:send', xhr);
+              element.trigger('ajax-send', xhr);
             } else {
               return false;
             }
           },
           success: function(data, status, xhr) {
-            element.trigger('ajax:success', [data, status, xhr]);
+            element.trigger('ajax-success', [data, status, xhr]);
           },
           complete: function(xhr, status) {
-            element.trigger('ajax:complete', [xhr, status]);
+            element.trigger('ajax-complete', [xhr, status]);
           },
           error: function(xhr, status, error) {
-            element.trigger('ajax:error', [xhr, status, error]);
+            element.trigger('ajax-error', [xhr, status, error]);
           },
           crossDomain: rails.isCrossDomain(url)
         };

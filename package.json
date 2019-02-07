@@ -1,7 +1,7 @@
 {
-  "name": "jquery-ujs",
+  "name": "jquery-vjs-rails",
   "version": "1.2.2",
-  "description": "Unobtrusive scripting adapter for jQuery",
+  "description": "Unobtrusive scripting adapter for jQuery, adapted for Rails with Vue.",
   "main": "src/rails.js",
   "scripts": {
     "test": "echo \"See the wiki: https://github.com/rails/jquery-ujs/wiki/Running-Tests-and-Contributing\" && exit 1",
